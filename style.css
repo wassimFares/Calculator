@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body, #fullheight{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 360px;
+}
+
+.result {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.result span {
+    color: #fff;
+    font-size: 105px;
+    margin-right: 30px;
+}
+
+.buttons-container {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.buttons-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 45px;
+    width: 80px;
+    height: 80px;
+    justify-self: center;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+.buttons-container button:hover {
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+  }
+
+/* .number, #comma {
+    background-color: #343434;
+}
+
+.item1 {
+    background-color: #a5a5a5;
+}
+
+.item2 {
+    background-color: #ff9f0a;
+} */
+
+.zero {
+    width: 160px !important;
+    border-radius: 97px !important;
+    grid-column: span 2;
+}
